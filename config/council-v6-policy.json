@@ -1,0 +1,51 @@
+{
+  "version": 6,
+
+  "maximum_active_tasks": 1,
+  "maximum_workers_per_candidate": 4,
+
+  "require_evidence": true,
+  "require_duplicate_check": true,
+  "require_repo_maturity_check": true,
+  "require_tests": true,
+  "require_security_scan": true,
+  "require_healthcheck": true,
+  "require_rollback_plan": true,
+
+  "minimum_maturity_score": 35,
+  "minimum_evidence_score": 60,
+
+  "automatic_merge": false,
+
+  "allowed": [
+    "read_repository",
+    "read_workflow_status",
+    "analyze_failure",
+    "generate_blueprint",
+    "generate_tests",
+    "run_local_tests",
+    "run_secret_scan",
+    "run_healthcheck",
+    "create_bot_branch",
+    "push_bot_branch",
+    "open_pull_request",
+    "update_existing_bot_pull_request",
+    "write_internal_learning_memory"
+  ],
+
+  "blocked": [
+    "force_push_main",
+    "direct_push_main",
+    "blind_merge",
+    "merge_red_checks",
+    "publish_secret",
+    "upload_raw_private_notes",
+    "delete_production_data",
+    "paid_advertising",
+    "mass_email",
+    "purchase",
+    "payment",
+    "crypto_trade",
+    "crypto_withdrawal"
+  ]
+}
