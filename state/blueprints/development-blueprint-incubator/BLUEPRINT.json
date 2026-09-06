@@ -1,0 +1,27 @@
+{
+  "signature": "abc5aacc4ec1bff0",
+  "created": "2026-09-06T09:06:20.057815+00:00",
+  "status": "LAB",
+  "title": "Development Blueprint Incubator",
+  "score": 96,
+  "problem": "Old ideas and experiments are easy to forget and repeatedly rebuild.",
+  "target_user": "Developer or small technical operation with recurring development and maintenance work.",
+  "evidence_source": [
+    "ai",
+    "automation"
+  ],
+  "solution": "Transform historical project signals into ranked reusable blueprints and minimal experiments.",
+  "reuse_check": "Reuse existing Mikis13 repositories and modules before creating duplicated implementation.",
+  "mvp": [
+    "one narrow working function",
+    "automated test",
+    "clear README",
+    "failure handling",
+    "measurable success condition"
+  ],
+  "success_metric": "A real recurring task is completed or diagnosed with less manual work.",
+  "stop_condition": "Pause if there is no measurable usefulness, excessive maintenance, or duplication with an existing project.",
+  "security": "No credentials or raw phone-storage source may be automatically published.",
+  "business_hypothesis": "Could become a tool or technical service only after demand is validated.",
+  "next_action": "Create the smallest reversible prototype."
+}
