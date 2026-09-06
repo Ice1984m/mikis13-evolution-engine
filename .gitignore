@@ -12,3 +12,8 @@ logs/*.log
 secrets/
 wallet/
 wallets/
+state/learning/learning.db
+state/learning/*.db
+local-inbox/
+*.secret
+*.credentials
