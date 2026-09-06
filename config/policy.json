@@ -1,0 +1,23 @@
+{
+  "phone_files_are_private_by_default": true,
+  "upload_phone_source": false,
+
+  "prototype_threshold": 75,
+  "new_repo_threshold": 85,
+
+  "max_new_repositories_per_cycle": 1,
+  "max_website_prs_per_cycle": 1,
+
+  "automatic_prototype_repo_creation": true,
+  "automatic_website_pull_request": true,
+
+  "direct_main_push": false,
+  "blind_auto_merge": false,
+
+  "external_paid_actions": false,
+  "mass_email": false,
+
+  "require_reuse_check": true,
+  "require_blueprint": true,
+  "require_test_report": true
+}

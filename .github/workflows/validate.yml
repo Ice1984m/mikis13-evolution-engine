@@ -1,0 +1,28 @@
+name: Validate Evolution Engine
+
+on:
+  workflow_dispatch:
+  pull_request:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate scripts
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python -m py_compile engine/evolve.py
+          bash -n scripts/*.sh
+          jq empty config/policy.json
+          test -s config/MASTER-PROMPT-V3.md
+          gh auth status
