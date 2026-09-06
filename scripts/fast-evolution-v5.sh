@@ -15,28 +15,36 @@ echo "=================================================="
 cd "$ROOT"
 
 echo
-echo "1/4 LEARN"
+echo "1/5 LEARN"
 
 if [ -f engine/learn_v4.py ]; then
     python engine/learn_v4.py || true
 fi
 
 echo
-echo "2/4 EVOLVE"
+echo "2/5 EVOLVE"
 
 if [ -f engine/evolve.py ]; then
     python engine/evolve.py || true
 fi
 
 echo
-echo "3/4 CREATE WORKERS"
+echo "3/5 CREATE WORKERS"
 
 python engine/bot_factory.py
 
 echo
-echo "4/4 RUN WORKERS"
+echo "4/5 RUN WORKERS"
 
 workers/run-workers.sh
 
 echo
+
+echo
+echo "5/5 BOT COUNCIL"
+
+workers/council-cycle.sh
+
+echo
 echo "✅ FAST EVOLUTION COMPLETE"
+
