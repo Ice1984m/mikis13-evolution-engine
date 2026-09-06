@@ -30,9 +30,9 @@ OWNER = os.getenv(
 )
 
 INBOXES = [
-    HOME / "storage/shared/Download/Mikis13-Inbox",
-    HOME / "storage/documents/Mikis13-Inbox",
-    HOME / "storage/downloads/Mikis13-Inbox",
+    HOME / "storage/shared/Download/Mikis13-Learning-Safe",
+    HOME / "storage/documents/Mikis13-Learning-Safe",
+    HOME / "storage/downloads/Mikis13-Learning-Safe",
 ]
 
 SAFE_EXT = {

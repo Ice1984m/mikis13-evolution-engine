@@ -1,0 +1,107 @@
+{
+  "generated": "2026-09-06T12:07:38.602389+00:00",
+  "source_candidate": "Autonomous Recovery Monitor",
+  "worker_count": 4,
+  "workers": [
+    {
+      "id": "a3171b2a637a",
+      "name": "Mikis13 Repair Worker / Autonomous Recovery Monitor",
+      "role": "Repair Worker",
+      "mission": "Autonomous Recovery Monitor",
+      "status": "READY",
+      "created": "2026-09-06T12:07:38.602307+00:00",
+      "permissions": [
+        "read repositories",
+        "analyze files",
+        "generate blueprint",
+        "run tests",
+        "create bot branch",
+        "open pull request"
+      ],
+      "blocked": [
+        "force push main",
+        "blind merge",
+        "publish secrets",
+        "payments",
+        "crypto trading",
+        "paid advertising",
+        "delete production data"
+      ]
+    },
+    {
+      "id": "725957e04acf",
+      "name": "Mikis13 Monitor Worker / Autonomous Recovery Monitor",
+      "role": "Monitor Worker",
+      "mission": "Autonomous Recovery Monitor",
+      "status": "READY",
+      "created": "2026-09-06T12:07:38.602358+00:00",
+      "permissions": [
+        "read repositories",
+        "analyze files",
+        "generate blueprint",
+        "run tests",
+        "create bot branch",
+        "open pull request"
+      ],
+      "blocked": [
+        "force push main",
+        "blind merge",
+        "publish secrets",
+        "payments",
+        "crypto trading",
+        "paid advertising",
+        "delete production data"
+      ]
+    },
+    {
+      "id": "1b42bd3e2bdd",
+      "name": "Mikis13 Website Worker / Autonomous Recovery Monitor",
+      "role": "Website Worker",
+      "mission": "Autonomous Recovery Monitor",
+      "status": "READY",
+      "created": "2026-09-06T12:07:38.602373+00:00",
+      "permissions": [
+        "read repositories",
+        "analyze files",
+        "generate blueprint",
+        "run tests",
+        "create bot branch",
+        "open pull request"
+      ],
+      "blocked": [
+        "force push main",
+        "blind merge",
+        "publish secrets",
+        "payments",
+        "crypto trading",
+        "paid advertising",
+        "delete production data"
+      ]
+    },
+    {
+      "id": "c75476f97eee",
+      "name": "Mikis13 AI Blueprint Worker / Autonomous Recovery Monitor",
+      "role": "AI Blueprint Worker",
+      "mission": "Autonomous Recovery Monitor",
+      "status": "READY",
+      "created": "2026-09-06T12:07:38.602383+00:00",
+      "permissions": [
+        "read repositories",
+        "analyze files",
+        "generate blueprint",
+        "run tests",
+        "create bot branch",
+        "open pull request"
+      ],
+      "blocked": [
+        "force push main",
+        "blind merge",
+        "publish secrets",
+        "payments",
+        "crypto trading",
+        "paid advertising",
+        "delete production data"
+      ]
+    }
+  ]
+}
