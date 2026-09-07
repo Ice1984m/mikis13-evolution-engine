@@ -1,0 +1,128 @@
+Mikis13 TGPT Doctor
+Date: 2026-09-06T20:41:18+02:00
+
+===== BINARY =====
+/data/data/com.termux/files/home/bin/tgpt
+tgpt 2.10.0
+
+===== HELP =====
+Usage: tgpt [Flags] [Prompt]
+
+Flags:
+-s, --shell                                        Generate and Execute shell commands. (Experimental) 
+-c, --code                                         Generate Code. (Experimental)
+-q, --quiet                                        Gives response back without loading animation
+-w, --whole                                        Gives response back as a whole text
+-img, --image                                      Generate images from text
+--provider                                         Set Provider. Detailed information has been provided below. (Env: AI_PROVIDER)
+
+Some additional options can be set. However not all options are supported by all providers. Not supported options will just be ignored.
+--model                                            Set Model
+--key                                              Set API Key. (Env: AI_API_KEY)
+--url                                              Set OpenAI API endpoint url
+--temperature                                      Set temperature
+--top_p                                            Set top_p
+--max_length                                       Set max response length
+--log                                              Set filepath to log conversation to (For interactive modes)
+--preprompt                                        Set preprompt
+-y                                                 Execute shell command without confirmation
+
+Options supported for image generation (with -image flag)
+--out                                              Output image filename (Supported by pollinations)
+--height                                           Output image height (Supported by pollinations)
+--width                                            Output image width (Supported by pollinations)
+--img_count                                        Output image count (Supported by arta)
+--img_negative                                     Negative prompt (Supported by arta)
+--img_ratio                                        Output image ratio (Supported by arta, some models may not support it)
+
+Options:
+-v, --version                                      Print version 
+-h, --help                                         Print help message 
+-i, --interactive                                  Start normal interactive mode 
+-m, --multiline                                    Start multi-line interactive mode 
+-is, --interactive-shell                           Start interactive shell mode. (Doesn't work with all providers) 
+-cl, --changelog                                   See changelog of versions 
+-u, --update                                       Update program 
+
+Providers:
+The default provider is phind. The AI_PROVIDER environment variable can be used to specify a different provider.
+Available providers to use: deepseek, gemini, groq, isou, koboldai, ollama, openai, pollinations and phind
+
+Provider: deepseek
+Uses deepseek-reasoner model by default. Requires API key. Recognizes the DEEPSEEK_API_KEY and DEEPSEEK_MODEL environment variables
+
+Provider: groq
+Requires a free API Key. Supported models: https://console.groq.com/docs/models
+
+Provider: gemini
+Requires a free API key. https://aistudio.google.com/apikey
+
+Provider: isou
+Free provider with web search
+
+Provider: koboldai
+Uses koboldcpp/HF_SPACE_Tiefighter-13B only, answers from novels
+
+Provider: ollama
+Needs to be run locally. Supports many models
+
+Provider: openai
+Needs API key to work and supports various models. Recognizes the OPENAI_API_KEY and OPENAI_MODEL environment variables. Supports custom urls with --url
+
+Provider: phind
+Uses Phind Model. Great for developers
+
+Provider: pollinations
+Completely free, default model is gpt-4o. Supported models: https://text.pollinations.ai/models
+
+Image generation providers:
+
+Provider: pollinations
+Supported models: flux, turbo
+
+Provider: arta
+Supported models: 
+Medieval, Vincent Van Gogh, F Dev, Low Poly, Dreamshaper-xl, Anima-pencil-xl, Biomech, Trash Polka, No Style, Cheyenne-xl, Chicano, Embroidery tattoo, Red and Black, Fantasy Art, Watercolor, Dotwork, Old school colored, Realistic tattoo, Japanese_2, Realistic-stock-xl, F Pro, RevAnimated, Katayama-mix-xl, SDXL L, Cor-epica-xl, Anime tattoo, New School, Death metal, Old School, Juggernaut-xl, Photographic, SDXL 1.0, Graffiti, Mini tattoo, Surrealism, Neo-traditional, On limbs black, Yamers-realistic-xl, Pony-xl, Playground-xl, Anything-xl, Flame design, Kawaii, Cinematic Art, Professional, Flux, Black Ink, Epicrealism-xl
+
+Supported ratios: 
+1:1, 2:3, 3:2, 3:4, 4:3, 9:16, 16:9, 9:21, 21:9
+
+Examples:
+tgpt "What is internet?"
+tgpt -m
+tgpt -s "How to update my system?"
+tgpt --provider duckduckgo "What is 1+1"
+tgpt --img "cat"
+tgpt --img --out ~/my-cat.jpg --height 256 --width 256 "cat"
+tgpt --provider openai --key "sk-xxxx" --model "gpt-3.5-turbo" "What is 1+1"
+cat install.sh | tgpt "Explain the code"
+
+===== NETWORK =====
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0HTTP/2 200 
+date: Sun, 06 Sep 2026 18:41:18 GMT
+content-type: text/html; charset=utf-8
+content-language: en-US
+vary: X-PJAX, X-PJAX-Container, Turbo-Visit, Turbo-Frame, X-Requested-With, X-GitHub-Client-Version, Accept-Language, Sec-Fetch-Site,Accept-Encoding, Accept, X-Requested-With
+etag: W/"133b2be17db62e3a7fff05aa498fe137"
+cache-control: max-age=0, private, must-revalidate
+strict-transport-security: max-age=31536000; includeSubdomains; preload
+x-frame-options: deny
+x-content-type-options: nosniff
+x-xss-protection: 0
+referrer-policy: origin-when-cross-origin, strict-origin-when-cross-origin
+content-security-policy: default-src 'none'; base-uri 'self'; child-src github.githubassets.com github.com/assets-cdn/worker/ github.com/assets/ gist.github.com/assets-cdn/worker/; connect-src 'self' uploads.github.com www.githubstatus.com collector.github.com raw.githubusercontent.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com *.rel.tunnels.api.visualstudio.com wss://*.rel.tunnels.api.visualstudio.com github.githubassets.com objects-origin.githubusercontent.com copilot-proxy.githubusercontent.com proxy.individual.githubcopilot.com proxy.business.githubcopilot.com proxy.enterprise.githubcopilot.com *.actions.githubusercontent.com wss://*.actions.githubusercontent.com productionresultssa0.blob.core.windows.net productionresultssa1.blob.core.windows.net productionresultssa2.blob.core.windows.net productionresultssa3.blob.core.windows.net productionresultssa4.blob.core.windows.net productionresultssa5.blob.core.windows.net productionresultssa6.blob.core.windows.net productionresultssa7.blob.core.windows.net productionresultssa8.blob.core.windows.net productionresultssa9.blob.core.windows.net productionresultssa10.blob.core.windows.net productionresultssa11.blob.core.windows.net productionresultssa12.blob.core.windows.net productionresultssa13.blob.core.windows.net productionresultssa14.blob.core.windows.net productionresultssa15.blob.core.windows.net productionresultssa16.blob.core.windows.net productionresultssa17.blob.core.windows.net productionresultssa18.blob.core.windows.net productionresultssa19.blob.core.windows.net github-production-repository-image-32fea6.s3.amazonaws.com github-production-release-asset-2e65be.s3.amazonaws.com insights.github.com wss://alive.github.com wss://alive-staging.github.com api.githubcopilot.com api.individual.githubcopilot.com api.business.githubcopilot.com api.enterprise.githubcopilot.com wss://production-copilot-host.webpubsub.azure.com edge.fullstory.com rs.fullstory.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com copilot-workspace.githubnext.com objects-origin.githubusercontent.com; frame-ancestors 'none'; frame-src viewscreen.githubusercontent.com notebooks.githubusercontent.com www.youtube-nocookie.com; img-src 'self' data: blob: github.githubassets.com media.githubusercontent.com camo.githubusercontent.com identicons.github.com avatars.githubusercontent.com private-avatars.githubusercontent.com github-cloud.s3.amazonaws.com objects.githubusercontent.com release-assets.githubusercontent.com secured-user-images.githubusercontent.com user-images.githubusercontent.com private-user-images.githubusercontent.com opengraph.githubassets.com repository-images.githubusercontent.com marketplace-screenshots.githubusercontent.com copilotprodattachments.blob.core.windows.net/github-production-copilot-attachments/ github-production-user-asset-6210df.s3.amazonaws.com customer-stories-feed.github.com spotlights-feed.github.com explore-feed.github.com objects-origin.githubusercontent.com *.githubusercontent.com images.ctfassets.net/8aevphvgewt8/; manifest-src 'self'; media-src github.com user-images.githubusercontent.com secured-user-images.githubusercontent.com private-user-images.githubusercontent.com github-production-user-asset-6210df.s3.amazonaws.com gist.github.com github.githubassets  0      0   0      0   0      0      0      0                              0  0      0   0      0   0      0      0      0                              0  0      0   0      0   0      0      0      0                              0
+.com assets.ctfassets.net/8aevphvgewt8/ videos.ctfassets.net/8aevphvgewt8/; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; upgrade-insecure-requests; worker-src github.githubassets.com github.com/assets-cdn/worker/ github.com/assets/ gist.github.com/assets-cdn/worker/
+server: github.com
+accept-ranges: bytes
+set-cookie: _gh_sess=9Gb%2Fdzhb1sy93tV4%2FCT7vDGcz0LDYXwmtjRpXacjSvx%2FzyBh%2B%2BC8A4E9Cs1B5p%2F755UcZ%2B5w0azwKXBmj0Vvqbd9A%2FN4iCPmJ0KRjtaSNkHDlK5Q8p2IPrv09%2F733uDVJKGOu5%2Bfy%2BCBlN1guiwO2RtnLF4kBCjBt89zFUIi2rNzzhFJxhunAE6yLwmn2JtYs1pjGJX5p1v7KVO3t4x4opOYyies03u4%2B9ztOBdEeO6My6u1lJje%2B%2FoiE68jLON77Xj%2F5kBDQhX3to8QuFNOuA%3D%3D--p8b5RC1vvR%2BvfID9--pwtyo34pKPnn3DDW0yR3og%3D%3D; path=/; HttpOnly; secure; SameSite=Lax
+set-cookie: _octo=GH1.1.661529977.1788720079; expires=Mon, 06 Sep 2027 18:41:19 GMT; domain=.github.com; path=/; secure; SameSite=Lax
+
+===== PROXY ENV =====
+Geen proxy environment
+
+===== DEFAULT TGPT TEST =====
+⣾  Loading⣽  Loading⣻  Loading⢿  Loading⡿  Loading⣟  Loading⣯  LoadingSome error has occurred. Statuscode: 530
+error code: 1016
+

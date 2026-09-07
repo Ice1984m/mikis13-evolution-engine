@@ -1,0 +1,52 @@
+#!/data/data/com.termux/files/usr/bin/bash
+
+ROOT="$HOME/mikis13-evolution-engine"
+
+echo "=============================================="
+echo " MIKIS13 AUTONOMOUS LIFE V11"
+echo "=============================================="
+
+echo
+echo "DAEMON"
+
+if pgrep -af \
+  "$ROOT/scripts/autonomous-life-v11.sh"
+then
+    echo "✅ ACTIVE"
+else
+    echo "⏸ INACTIVE"
+fi
+
+echo
+echo "TGPT"
+
+command -v tgpt || true
+tgpt --version 2>/dev/null || true
+
+echo
+echo "AI PROVIDER"
+
+if [ -f "$ROOT/state/ai/last-provider.json" ]; then
+    cat "$ROOT/state/ai/last-provider.json"
+else
+    echo "Nog geen succesvolle AI provider."
+fi
+
+echo
+echo "CITY"
+
+[ -f "$ROOT/reports/city-v9-status.json" ] &&
+  cat "$ROOT/reports/city-v9-status.json"
+
+echo
+echo "LATEST COUNCIL"
+
+[ -f "$ROOT/reports/council/latest.md" ] &&
+  tail -n 60 \
+    "$ROOT/reports/council/latest.md"
+
+echo
+echo "LATEST LEARNING LOG"
+
+[ -f "$ROOT/reports/learning/latest.md" ] &&
+  echo "$ROOT/reports/learning/latest.md"

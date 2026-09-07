@@ -1,0 +1,14 @@
+#!/data/data/com.termux/files/usr/bin/bash
+
+ROOT="$HOME/mikis13-evolution-engine"
+
+pkill -f \
+ "$ROOT/scripts/autonomous-life-v11.sh" \
+ 2>/dev/null || true
+
+rm -f \
+ "$ROOT/state/locks/autonomous-life.pid"
+
+termux-wake-unlock 2>/dev/null || true
+
+echo "✅ Autonomous Life gestopt"

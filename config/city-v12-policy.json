@@ -1,0 +1,43 @@
+{
+  "version": 12,
+
+  "maximum_active_agents": 10,
+  "maximum_workers_per_job": 3,
+
+  "promotion": {
+    "specialist_min_reputation": 70,
+    "specialist_min_successes": 10,
+    "mentor_min_reputation": 85,
+    "mentor_min_successes": 25
+  },
+
+  "learning": {
+    "success_skill_gain": 2,
+    "failure_skill_loss": 1,
+    "maximum_skill": 100,
+    "minimum_skill": 0
+  },
+
+  "evidence": {
+    "required_for_promotion": true,
+    "required_for_completed_job": true
+  },
+
+  "blocked": [
+    "direct_push_main",
+    "force_push_main",
+    "blind_merge",
+    "merge_red_checks",
+    "publish_secret",
+    "payment",
+    "purchase",
+    "crypto_trade",
+    "crypto_withdrawal",
+    "paid_advertising",
+    "mass_pull_request",
+    "mass_issue_creation",
+    "mass_comment_creation",
+    "disable_safety_gate",
+    "increase_own_permissions"
+  ]
+}

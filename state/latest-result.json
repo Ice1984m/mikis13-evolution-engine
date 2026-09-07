@@ -1,0 +1,20 @@
+{
+  "generated": "2026-09-07T18:10:16.369773+00:00",
+  "projects": 888,
+  "repos": 73,
+  "ideas": 7,
+  "best_idea": {
+    "title": "Development Blueprint Incubator",
+    "slug": "development-blueprint-incubator",
+    "problem": "Old ideas and experiments are easy to forget and repeatedly rebuild.",
+    "solution": "Transform historical project signals into ranked reusable blueprints and minimal experiments.",
+    "score": 91,
+    "source_tags": [
+      "ai",
+      "automation"
+    ]
+  },
+  "blueprint": "/data/data/com.termux/files/home/mikis13-evolution-engine/state/blueprints/development-blueprint-incubator/BLUEPRINT.json",
+  "report": "/data/data/com.termux/files/home/mikis13-evolution-engine/reports/latest.md",
+  "prototype_repo": "Ice1984m/mikis13-lab-development-blueprint-incubator"
+}

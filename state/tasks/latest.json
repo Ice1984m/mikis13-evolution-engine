@@ -1,0 +1,57 @@
+{
+  "source": "evolution",
+  "title": "Development Blueprint Incubator",
+  "description": "{\"title\": \"Development Blueprint Incubator\", \"slug\": \"development-blueprint-incubator\", \"problem\": \"Old ideas and experiments are easy to forget and repeatedly rebuild.\", \"solution\": \"Transform historical project signals into ranked reusable blueprints and minimal experiments.\", \"score\": 91, \"source_tags\": [\"ai\", \"automation\"]}",
+  "base_score": 91,
+  "fingerprint": "730350e9469e5cbaf5b3",
+  "evidence_score": 100,
+  "evidence": [
+    "evolution-analysis",
+    "existing-repository"
+  ],
+  "related_repositories": [
+    {
+      "repo": "mikis13-lab-development-blueprint-incubator",
+      "maturity": 75,
+      "overlap": 3
+    },
+    {
+      "repo": "android-basics-kotlin-tip-calculator-app-solution",
+      "maturity": 40,
+      "overlap": 1
+    }
+  ],
+  "duplicate": {
+    "duplicate": false,
+    "match": {
+      "similarity": 0,
+      "title": "Evolution cycle 2026-09-06",
+      "number": 3,
+      "repository": "Ice1984m/mikis13-evolution-engine",
+      "url": "https://github.com/Ice1984m/mikis13-evolution-engine/pull/3"
+    }
+  },
+  "failure_penalty": 0,
+  "previous_failures": [],
+  "selected_action": "IMPROVE_EXISTING_REPO",
+  "id": "b027e6c4ddfcf0373f3b",
+  "created": "2026-09-06T12:13:11.972777+00:00",
+  "rollback_plan": {
+    "before_change": [
+      "record current branch SHA",
+      "record current workflow status",
+      "record current healthcheck result"
+    ],
+    "rollback": [
+      "do not merge failing PR",
+      "close bot PR when invalid",
+      "delete bot branch only after review",
+      "restore previous tested commit if already deployed"
+    ],
+    "required_after_change": [
+      "tests green",
+      "security scan green",
+      "healthcheck green"
+    ]
+  }
+}

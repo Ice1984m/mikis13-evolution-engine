@@ -1,0 +1,46 @@
+{
+  "generated": "2026-09-06T12:24:00.185013+00:00",
+  "topic": "Development Blueprint Incubator",
+  "worker_count": 2,
+  "messages": [
+    {
+      "id": "4a187609148a7c",
+      "timestamp": "2026-09-06T12:12:24.667253+00:00",
+      "worker_id": "583c63b3f502",
+      "worker_role": "Automation Worker",
+      "topic": "Development Blueprint Incubator",
+      "kind": "observation",
+      "message": "Analyseer kleinste veilige actie met aantoonbare impact.",
+      "confidence": 75,
+      "risk": "medium",
+      "recommendation": "smallest-action",
+      "weighted_score": 71.25
+    },
+    {
+      "id": "124957e89d4330",
+      "timestamp": "2026-09-06T12:12:24.667555+00:00",
+      "worker_id": "b0672f753d6d",
+      "worker_role": "AI Blueprint Worker",
+      "topic": "Development Blueprint Incubator",
+      "kind": "observation",
+      "message": "Analyseer kleinste veilige actie met aantoonbare impact.",
+      "confidence": 75,
+      "risk": "medium",
+      "recommendation": "smallest-action",
+      "weighted_score": 67.5
+    }
+  ],
+  "blockers": [],
+  "decision": {
+    "action": "smallest-action",
+    "votes": 2,
+    "score": 138.75
+  },
+  "merge_policy": {
+    "bot_branch_only": true,
+    "tests_required": true,
+    "security_required": true,
+    "healthcheck_required": true,
+    "blind_merge": false
+  }
+}

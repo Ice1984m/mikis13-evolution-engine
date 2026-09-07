@@ -1,0 +1,811 @@
+{
+  "generated": "2026-09-06T12:13:10.182035+00:00",
+  "repositories": [
+    {
+      "repo": "idaas.nl",
+      "url": "https://github.com/Ice1984m/idaas.nl",
+      "score": 100,
+      "reasons": [
+        "description",
+        "source-code",
+        "readme",
+        "dependency-manifest",
+        "tests",
+        "automation",
+        "runtime",
+        "product-content"
+      ]
+    },
+    {
+      "repo": "Card-virtuweel",
+      "url": "https://github.com/Ice1984m/Card-virtuweel",
+      "score": 90,
+      "reasons": [
+        "description",
+        "source-code",
+        "readme",
+        "dependency-manifest",
+        "tests",
+        "automation",
+        "product-content"
+      ]
+    },
+    {
+      "repo": "mikis13-developer-assessment",
+      "url": "https://github.com/Ice1984m/mikis13-developer-assessment",
+      "score": 90,
+      "reasons": [
+        "description",
+        "source-code",
+        "readme",
+        "dependency-manifest",
+        "tests",
+        "automation",
+        "product-content"
+      ]
+    },
+    {
+      "repo": "fulcio",
+      "url": "https://github.com/Ice1984m/fulcio",
+      "score": 90,
+      "reasons": [
+        "description",
+        "source-code",
+        "readme",
+        "dependency-manifest",
+        "tests",
+        "automation",
+        "runtime"
+      ]
+    },
+    {
+      "repo": "tree-sitter",
+      "url": "https://github.com/Ice1984m/tree-sitter",
+      "score": 90,
+      "reasons": [
+        "description",
+        "source-code",
+        "readme",
+        "dependency-manifest",
+        "tests",
+        "automation",
+        "runtime"
+      ]
+    },
+    {
+      "repo": "SponsorBlockServer",
+      "url": "https://github.com/Ice1984m/SponsorBlockServer",
+      "score": 90,
+      "reasons": [
+        "description",
+        "source-code",
+        "dependency-manifest",
+        "tests",
+        "automation",
+        "runtime",
+        "product-content"
+      ]
+    },
+    {
+      "repo": "tree-sitter-python",
+      "url": "https://github.com/Ice1984m/tree-sitter-python",
+      "score": 90,
+      "reasons": [
+        "description",
+        "source-code",
+        "readme",
+        "dependency-manifest",
+        "tests",
+        "automation",
+        "product-content"
+      ]
+    },
+    {
+      "repo": "mikis13-app-access-test",
+      "url": "https://github.com/Ice1984m/mikis13-app-access-test",
+      "score": 80,
+      "reasons": [
+        "source-code",
+        "readme",
+        "dependency-manifest",
+        "tests",
+        "automation",
+        "product-content"
+      ]
+    },
+    {
+      "repo": "filament",
+      "url": "https://github.com/Ice1984m/filament",
+      "score": 80,
+      "reasons": [
+        "description",
+        "source-code",
+        "readme",
+        "dependency-manifest",
+        "tests",
+        "automation"
+      ]
+    },
+    {
+      "repo": "cli",
+      "url": "https://github.com/Ice1984m/cli",
+      "score": 80,
+      "reasons": [
+        "description",
+        "source-code",
+        "readme",
+        "dependency-manifest",
+        "tests",
+        "automation"
+      ]
+    },
+    {
+      "repo": "cosign",
+      "url": "https://github.com/Ice1984m/cosign",
+      "score": 80,
+      "reasons": [
+        "description",
+        "source-code",
+        "readme",
+        "dependency-manifest",
+        "tests",
+        "automation"
+      ]
+    },
+    {
+      "repo": "python-OBD",
+      "url": "https://github.com/Ice1984m/python-OBD",
+      "score": 80,
+      "reasons": [
+        "description",
+        "source-code",
+        "readme",
+        "dependency-manifest",
+        "tests",
+        "automation"
+      ]
+    },
+    {
+      "repo": "mikis13-site",
+      "url": "https://github.com/Ice1984m/mikis13-site",
+      "score": 75,
+      "reasons": [
+        "source-code",
+        "readme",
+        "dependency-manifest",
+        "automation",
+        "runtime",
+        "product-content"
+      ]
+    },
+    {
+      "repo": "mikis13-lab-autonomous-recovery-monitor",
+      "url": "https://github.com/Ice1984m/mikis13-lab-autonomous-recovery-monitor",
+      "score": 75,
+      "reasons": [
+        "description",
+        "source-code",
+        "readme",
+        "tests",
+        "automation",
+        "product-content"
+      ]
+    },
+    {
+      "repo": "mikis13-lab-development-blueprint-incubator",
+      "url": "https://github.com/Ice1984m/mikis13-lab-development-blueprint-incubator",
+      "score": 75,
+      "reasons": [
+        "description",
+        "source-code",
+        "readme",
+        "tests",
+        "automation",
+        "product-content"
+      ]
+    },
+    {
+      "repo": "mikis13-ai-robots",
+      "url": "https://github.com/Ice1984m/mikis13-ai-robots",
+      "score": 75,
+      "reasons": [
+        "description",
+        "source-code",
+        "readme",
+        "dependency-manifest",
+        "automation",
+        "product-content"
+      ]
+    },
+    {
+      "repo": "mikis13-ps5-runtime",
+      "url": "https://github.com/Ice1984m/mikis13-ps5-runtime",
+      "score": 75,
+      "reasons": [
+        "description",
+        "source-code",
+        "readme",
+        "tests",
+        "automation",
+        "product-content"
+      ]
+    },
+    {
+      "repo": "download-artifact",
+      "url": "https://github.com/Ice1984m/download-artifact",
+      "score": 75,
+      "reasons": [
+        "description",
+        "source-code",
+        "readme",
+        "dependency-manifest",
+        "automation",
+        "product-content"
+      ]
+    },
+    {
+      "repo": "tgpt",
+      "url": "https://github.com/Ice1984m/tgpt",
+      "score": 75,
+      "reasons": [
+        "description",
+        "source-code",
+        "readme",
+        "dependency-manifest",
+        "automation",
+        "product-content"
+      ]
+    },
+    {
+      "repo": "gemini-cli",
+      "url": "https://github.com/Ice1984m/gemini-cli",
+      "score": 75,
+      "reasons": [
+        "description",
+        "source-code",
+        "readme",
+        "dependency-manifest",
+        "automation",
+        "runtime"
+      ]
+    },
+    {
+      "repo": "github-mcp-server",
+      "url": "https://github.com/Ice1984m/github-mcp-server",
+      "score": 75,
+      "reasons": [
+        "description",
+        "source-code",
+        "readme",
+        "dependency-manifest",
+        "automation",
+        "runtime"
+      ]
+    },
+    {
+      "repo": "vshaxe",
+      "url": "https://github.com/Ice1984m/vshaxe",
+      "score": 75,
+      "reasons": [
+        "description",
+        "source-code",
+        "readme",
+        "dependency-manifest",
+        "automation",
+        "product-content"
+      ]
+    },
+    {
+      "repo": "google-analytics-mcp",
+      "url": "https://github.com/Ice1984m/google-analytics-mcp",
+      "score": 70,
+      "reasons": [
+        "source-code",
+        "readme",
+        "dependency-manifest",
+        "tests",
+        "automation"
+      ]
+    },
+    {
+      "repo": "mikis13-nexus",
+      "url": "https://github.com/Ice1984m/mikis13-nexus",
+      "score": 65,
+      "reasons": [
+        "description",
+        "source-code",
+        "readme",
+        "tests",
+        "automation"
+      ]
+    },
+    {
+      "repo": "nexus-autoforge-ai",
+      "url": "https://github.com/Ice1984m/nexus-autoforge-ai",
+      "score": 65,
+      "reasons": [
+        "description",
+        "source-code",
+        "readme",
+        "tests",
+        "automation"
+      ]
+    },
+    {
+      "repo": "mikis13-control-plane",
+      "url": "https://github.com/Ice1984m/mikis13-control-plane",
+      "score": 65,
+      "reasons": [
+        "source-code",
+        "readme",
+        "tests",
+        "automation",
+        "product-content"
+      ]
+    },
+    {
+      "repo": "rayhunter",
+      "url": "https://github.com/Ice1984m/rayhunter",
+      "score": 65,
+      "reasons": [
+        "description",
+        "source-code",
+        "readme",
+        "dependency-manifest",
+        "automation"
+      ]
+    },
+    {
+      "repo": "mikis13-ai",
+      "url": "https://github.com/Ice1984m/mikis13-ai",
+      "score": 65,
+      "reasons": [
+        "source-code",
+        "readme",
+        "dependency-manifest",
+        "automation",
+        "product-content"
+      ]
+    },
+    {
+      "repo": "pkg.pr.new",
+      "url": "https://github.com/Ice1984m/pkg.pr.new",
+      "score": 65,
+      "reasons": [
+        "description",
+        "source-code",
+        "readme",
+        "dependency-manifest",
+        "automation"
+      ]
+    },
+    {
+      "repo": "ai-repair-bots",
+      "url": "https://github.com/Ice1984m/ai-repair-bots",
+      "score": 65,
+      "reasons": [
+        "description",
+        "source-code",
+        "readme",
+        "dependency-manifest",
+        "automation"
+      ]
+    },
+    {
+      "repo": "material-components-android",
+      "url": "https://github.com/Ice1984m/material-components-android",
+      "score": 65,
+      "reasons": [
+        "description",
+        "source-code",
+        "readme",
+        "tests",
+        "automation"
+      ]
+    },
+    {
+      "repo": "run-gemini-cli",
+      "url": "https://github.com/Ice1984m/run-gemini-cli",
+      "score": 65,
+      "reasons": [
+        "description",
+        "source-code",
+        "readme",
+        "dependency-manifest",
+        "automation"
+      ]
+    },
+    {
+      "repo": "firebase-framework-tools",
+      "url": "https://github.com/Ice1984m/firebase-framework-tools",
+      "score": 65,
+      "reasons": [
+        "description",
+        "source-code",
+        "readme",
+        "dependency-manifest",
+        "automation"
+      ]
+    },
+    {
+      "repo": "vscode-go",
+      "url": "https://github.com/Ice1984m/vscode-go",
+      "score": 65,
+      "reasons": [
+        "description",
+        "source-code",
+        "readme",
+        "dependency-manifest",
+        "automation"
+      ]
+    },
+    {
+      "repo": "docs",
+      "url": "https://github.com/Ice1984m/docs",
+      "score": 65,
+      "reasons": [
+        "description",
+        "source-code",
+        "readme",
+        "dependency-manifest",
+        "automation"
+      ]
+    },
+    {
+      "repo": "mikis13-edgehub",
+      "url": "https://github.com/Ice1984m/mikis13-edgehub",
+      "score": 60,
+      "reasons": [
+        "description",
+        "source-code",
+        "readme",
+        "automation",
+        "product-content"
+      ]
+    },
+    {
+      "repo": "mikis13-pro",
+      "url": "https://github.com/Ice1984m/mikis13-pro",
+      "score": 60,
+      "reasons": [
+        "description",
+        "source-code",
+        "readme",
+        "automation",
+        "product-content"
+      ]
+    },
+    {
+      "repo": "mikis-live-dashboard",
+      "url": "https://github.com/Ice1984m/mikis-live-dashboard",
+      "score": 60,
+      "reasons": [
+        "description",
+        "source-code",
+        "readme",
+        "automation",
+        "product-content"
+      ]
+    },
+    {
+      "repo": "mikis-research-school",
+      "url": "https://github.com/Ice1984m/mikis-research-school",
+      "score": 60,
+      "reasons": [
+        "description",
+        "source-code",
+        "readme",
+        "automation",
+        "product-content"
+      ]
+    },
+    {
+      "repo": "git-credential-manager",
+      "url": "https://github.com/Ice1984m/git-credential-manager",
+      "score": 60,
+      "reasons": [
+        "description",
+        "source-code",
+        "readme",
+        "automation",
+        "product-content"
+      ]
+    },
+    {
+      "repo": "mikis13-container-bot",
+      "url": "https://github.com/Ice1984m/mikis13-container-bot",
+      "score": 50,
+      "reasons": [
+        "source-code",
+        "readme",
+        "automation",
+        "runtime"
+      ]
+    },
+    {
+      "repo": "GLM-5",
+      "url": "https://github.com/Ice1984m/GLM-5",
+      "score": 50,
+      "reasons": [
+        "description",
+        "readme",
+        "dependency-manifest",
+        "automation"
+      ]
+    },
+    {
+      "repo": "mikis13-ps5-lab",
+      "url": "https://github.com/Ice1984m/mikis13-ps5-lab",
+      "score": 50,
+      "reasons": [
+        "source-code",
+        "readme",
+        "automation",
+        "product-content"
+      ]
+    },
+    {
+      "repo": "mikis13-server",
+      "url": "https://github.com/Ice1984m/mikis13-server",
+      "score": 50,
+      "reasons": [
+        "description",
+        "source-code",
+        "automation",
+        "product-content"
+      ]
+    },
+    {
+      "repo": "termux-api",
+      "url": "https://github.com/Ice1984m/termux-api",
+      "score": 50,
+      "reasons": [
+        "description",
+        "source-code",
+        "readme",
+        "automation"
+      ]
+    },
+    {
+      "repo": "mikis13-cyber-guard",
+      "url": "https://github.com/Ice1984m/mikis13-cyber-guard",
+      "score": 50,
+      "reasons": [
+        "description",
+        "source-code",
+        "readme",
+        "automation"
+      ]
+    },
+    {
+      "repo": "Kalli-app",
+      "url": "https://github.com/Ice1984m/Kalli-app",
+      "score": 50,
+      "reasons": [
+        "description",
+        "source-code",
+        "readme",
+        "automation"
+      ]
+    },
+    {
+      "repo": "neko",
+      "url": "https://github.com/Ice1984m/neko",
+      "score": 50,
+      "reasons": [
+        "description",
+        "source-code",
+        "readme",
+        "automation"
+      ]
+    },
+    {
+      "repo": "advanced-android-testing",
+      "url": "https://github.com/Ice1984m/advanced-android-testing",
+      "score": 50,
+      "reasons": [
+        "description",
+        "source-code",
+        "readme",
+        "automation"
+      ]
+    },
+    {
+      "repo": "Git-Credential-Manager-for-Windows",
+      "url": "https://github.com/Ice1984m/Git-Credential-Manager-for-Windows",
+      "score": 50,
+      "reasons": [
+        "description",
+        "source-code",
+        "readme",
+        "automation"
+      ]
+    },
+    {
+      "repo": "mikis13-evolution-engine",
+      "url": "https://github.com/Ice1984m/mikis13-evolution-engine",
+      "score": 40,
+      "reasons": [
+        "description",
+        "source-code",
+        "automation"
+      ]
+    },
+    {
+      "repo": "mikis13-autodev-hub",
+      "url": "https://github.com/Ice1984m/mikis13-autodev-hub",
+      "score": 40,
+      "reasons": [
+        "source-code",
+        "readme",
+        "automation"
+      ]
+    },
+    {
+      "repo": "mikisworkflow",
+      "url": "https://github.com/Ice1984m/mikisworkflow",
+      "score": 40,
+      "reasons": [
+        "description",
+        "source-code",
+        "automation"
+      ]
+    },
+    {
+      "repo": "ovpn-net-next",
+      "url": "https://github.com/Ice1984m/ovpn-net-next",
+      "score": 40,
+      "reasons": [
+        "description",
+        "source-code",
+        "automation"
+      ]
+    },
+    {
+      "repo": "Magisk",
+      "url": "https://github.com/Ice1984m/Magisk",
+      "score": 40,
+      "reasons": [
+        "description",
+        "source-code",
+        "automation"
+      ]
+    },
+    {
+      "repo": "android-basics-kotlin-tip-calculator-app-solution",
+      "url": "https://github.com/Ice1984m/android-basics-kotlin-tip-calculator-app-solution",
+      "score": 40,
+      "reasons": [
+        "source-code",
+        "readme",
+        "automation"
+      ]
+    },
+    {
+      "repo": "DirHash",
+      "url": "https://github.com/Ice1984m/DirHash",
+      "score": 35,
+      "reasons": [
+        "description",
+        "source-code",
+        "readme"
+      ]
+    },
+    {
+      "repo": "android-NfcProvisioning",
+      "url": "https://github.com/Ice1984m/android-NfcProvisioning",
+      "score": 35,
+      "reasons": [
+        "description",
+        "source-code",
+        "readme"
+      ]
+    },
+    {
+      "repo": "mikis13-survival-network",
+      "url": "https://github.com/Ice1984m/mikis13-survival-network",
+      "score": 25,
+      "reasons": [
+        "description",
+        "automation"
+      ]
+    },
+    {
+      "repo": "octocat.github.io",
+      "url": "https://github.com/Ice1984m/octocat.github.io",
+      "score": 25,
+      "reasons": [
+        "source-code",
+        "product-content"
+      ]
+    },
+    {
+      "repo": "mikis13-tech-services",
+      "url": "https://github.com/Ice1984m/mikis13-tech-services",
+      "score": 20,
+      "reasons": [
+        "description",
+        "readme"
+      ]
+    },
+    {
+      "repo": "Readme-profile-Hi-there-",
+      "url": "https://github.com/Ice1984m/Readme-profile-Hi-there-",
+      "score": 20,
+      "reasons": [
+        "description",
+        "readme"
+      ]
+    },
+    {
+      "repo": "Ice1984m",
+      "url": "https://github.com/Ice1984m/Ice1984m",
+      "score": 20,
+      "reasons": [
+        "description",
+        "readme"
+      ]
+    },
+    {
+      "repo": "git-consortium",
+      "url": "https://github.com/Ice1984m/git-consortium",
+      "score": 20,
+      "reasons": [
+        "description",
+        "readme"
+      ]
+    },
+    {
+      "repo": "mikis13-private-backup",
+      "url": "https://github.com/Ice1984m/mikis13-private-backup",
+      "score": 10,
+      "reasons": [
+        "readme"
+      ]
+    },
+    {
+      "repo": "mikis13-agent-control",
+      "url": "https://github.com/Ice1984m/mikis13-agent-control",
+      "score": 10,
+      "reasons": [
+        "description"
+      ]
+    },
+    {
+      "repo": "mikis13-termux-control",
+      "url": "https://github.com/Ice1984m/mikis13-termux-control",
+      "score": 10,
+      "reasons": [
+        "description"
+      ]
+    },
+    {
+      "repo": "mikis13-ai-robot",
+      "url": "https://github.com/Ice1984m/mikis13-ai-robot",
+      "score": 10,
+      "reasons": [
+        "description"
+      ]
+    },
+    {
+      "repo": "Hello-World",
+      "url": "https://github.com/Ice1984m/Hello-World",
+      "score": 10,
+      "reasons": [
+        "description"
+      ]
+    },
+    {
+      "repo": "mikis13-youtube-android",
+      "url": "https://github.com/Ice1984m/mikis13-youtube-android",
+      "score": 0,
+      "reasons": []
+    },
+    {
+      "repo": "studio",
+      "url": "https://github.com/Ice1984m/studio",
+      "score": 0,
+      "reasons": []
+    }
+  ]
+}

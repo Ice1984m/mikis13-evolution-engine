@@ -1,0 +1,25 @@
+#!/data/data/com.termux/files/usr/bin/bash
+set -u
+
+ROOT="$HOME/mikis13-evolution-engine"
+
+if pgrep -f \
+  "$ROOT/scripts/autonomous-life-v11.sh" \
+  >/dev/null
+then
+    echo "✅ Mikis13 Life V11 draait al."
+    exit 0
+fi
+
+termux-wake-lock 2>/dev/null || true
+
+nohup \
+ "$ROOT/scripts/autonomous-life-v11.sh" \
+ >> "$ROOT/logs/life/daemon.log" \
+ 2>&1 &
+
+echo "$!" \
+ > "$ROOT/state/locks/autonomous-life.pid"
+
+echo "✅ Autonomous Life V11 gestart"
+echo "PID $!"

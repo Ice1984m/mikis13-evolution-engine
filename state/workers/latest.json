@@ -1,0 +1,57 @@
+{
+  "generated": "2026-09-06T21:43:52.660553+00:00",
+  "source_candidate": "Development Blueprint Incubator",
+  "worker_count": 2,
+  "workers": [
+    {
+      "id": "583c63b3f502",
+      "name": "Mikis13 Automation Worker / Development Blueprint Incubator",
+      "role": "Automation Worker",
+      "mission": "Development Blueprint Incubator",
+      "status": "READY",
+      "created": "2026-09-06T21:43:52.660531+00:00",
+      "permissions": [
+        "read repositories",
+        "analyze files",
+        "generate blueprint",
+        "run tests",
+        "create bot branch",
+        "open pull request"
+      ],
+      "blocked": [
+        "force push main",
+        "blind merge",
+        "publish secrets",
+        "payments",
+        "crypto trading",
+        "paid advertising",
+        "delete production data"
+      ]
+    },
+    {
+      "id": "b0672f753d6d",
+      "name": "Mikis13 AI Blueprint Worker / Development Blueprint Incubator",
+      "role": "AI Blueprint Worker",
+      "mission": "Development Blueprint Incubator",
+      "status": "READY",
+      "created": "2026-09-06T21:43:52.660549+00:00",
+      "permissions": [
+        "read repositories",
+        "analyze files",
+        "generate blueprint",
+        "run tests",
+        "create bot branch",
+        "open pull request"
+      ],
+      "blocked": [
+        "force push main",
+        "blind merge",
+        "publish secrets",
+        "payments",
+        "crypto trading",
+        "paid advertising",
+        "delete production data"
+      ]
+    }
+  ]
+}
