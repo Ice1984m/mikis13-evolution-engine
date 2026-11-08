@@ -1,0 +1,19 @@
+{
+  "generated": "2026-09-06T12:10:12.170428+00:00",
+  "projects": 695,
+  "repos": 70,
+  "ideas": 7,
+  "best_idea": {
+    "title": "Autonomous Recovery Monitor",
+    "slug": "autonomous-recovery-monitor",
+    "problem": "Websites and services fail repeatedly and require manual diagnosis.",
+    "solution": "Combine monitoring with remembered repair playbooks to detect, diagnose and prepare recovery automatically.",
+    "score": 95,
+    "source_tags": [
+      "monitoring",
+      "repair"
+    ]
+  },
+  "blueprint": "/data/data/com.termux/files/home/mikis13-evolution-engine/state/blueprints/autonomous-recovery-monitor/BLUEPRINT.json",
+  "report": "/data/data/com.termux/files/home/mikis13-evolution-engine/reports/latest.md"
+}

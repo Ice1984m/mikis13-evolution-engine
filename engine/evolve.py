@@ -220,9 +220,25 @@ def db():
 
 def find_projects():
 
-    found = {}
+    candidates = {}
+    seen_realpaths = set()
 
-    visited = set()
+    def canonical(path):
+        try:
+            return str(path.resolve())
+        except Exception:
+            return str(path)
+
+    def looks_like_project_root(path, files):
+        markers = [
+            marker for marker in MARKERS
+            if marker in files
+        ]
+
+        if (path / ".git").exists():
+            markers.append(".git")
+
+        return markers
 
     for base in SCAN_ROOTS:
 
@@ -239,30 +255,66 @@ def find_projects():
                 and not blocked(p / d)
             ]
 
-            try:
-                rp = str(p.resolve())
-            except Exception:
+            real = canonical(p)
+
+            if real in seen_realpaths:
+                dirs[:] = []
                 continue
 
-            if rp in visited:
+            seen_realpaths.add(real)
+
+            markers = looks_like_project_root(
+                p,
+                files
+            )
+
+            if not markers:
                 continue
 
-            visited.add(rp)
+            # -------------------------------------------------
+            # Nested project suppressie:
+            # als een parent binnen 3 niveaus reeds een duidelijke
+            # project-root is, behandel deze map niet opnieuw als
+            # zelfstandig project tenzij hij zelf .git bevat.
+            # -------------------------------------------------
+
+            nested_parent = None
+
+            current = p.parent
+
+            for _ in range(3):
+
+                parent_real = canonical(current)
+
+                if parent_real in candidates:
+                    nested_parent = parent_real
+                    break
+
+                if current == current.parent:
+                    break
+
+                current = current.parent
+
+            has_git = (
+                p / ".git"
+            ).exists()
+
+            if nested_parent and not has_git:
+                continue
 
             marker_types = []
 
-            for marker, typ in MARKERS.items():
+            for marker in markers:
 
-                if marker in files:
-                    marker_types.append(typ)
-
-            git_dir = p / ".git"
-
-            if git_dir.exists():
-                marker_types.append("git")
-
-            if not marker_types:
-                continue
+                if marker == ".git":
+                    marker_types.append("git")
+                else:
+                    marker_types.append(
+                        MARKERS.get(
+                            marker,
+                            "unknown"
+                        )
+                    )
 
             todos = 0
             codefiles = 0
@@ -278,16 +330,17 @@ def find_projects():
                     continue
 
                 try:
+
                     if f.stat().st_size > 1_500_000:
                         continue
 
-                    text = f.read_text(
+                    body = f.read_text(
                         encoding="utf-8",
                         errors="ignore"
                     )
 
                     todos += len(
-                        TODO_RE.findall(text)
+                        TODO_RE.findall(body)
                     )
 
                     codefiles += 1
@@ -312,16 +365,34 @@ def find_projects():
                 todos * 2
             )
 
-            if git_dir.exists():
+            if has_git:
                 score += 10
 
-            score = min(
-                100,
-                score
+            # Backup/archive-namen krijgen lagere waarde.
+            name_lower = p.name.lower()
+
+            if any(
+                x in name_lower
+                for x in (
+                    "backup",
+                    "old",
+                    "copy",
+                    "archive",
+                    "tmp"
+                )
+            ):
+                score -= 15
+
+            score = max(
+                0,
+                min(
+                    100,
+                    score
+                )
             )
 
-            found[str(p)] = {
-                "path": str(p),
+            candidates[real] = {
+                "path": real,
                 "types": sorted(
                     set(marker_types)
                 ),
@@ -330,8 +401,69 @@ def find_projects():
                 "score": score
             }
 
-    return list(found.values())
+    # ---------------------------------------------
+    # Conceptuele duplicaten groeperen.
+    # ---------------------------------------------
 
+    by_name = {}
+
+    for project in candidates.values():
+
+        name = Path(
+            project["path"]
+        ).name.lower()
+
+        clean_name = re.sub(
+            r"[-_](backup|old|copy|archive)[-_0-9]*$",
+            "",
+            name
+        )
+
+        by_name.setdefault(
+            clean_name,
+            []
+        ).append(
+            project
+        )
+
+    results = []
+
+    for _, group in by_name.items():
+
+        group.sort(
+            key=lambda x: (
+                "git" in x["types"],
+                x["score"],
+                x["codefiles"]
+            ),
+            reverse=True
+        )
+
+        primary = group[0]
+
+        primary[
+            "duplicate_candidates"
+        ] = [
+            x["path"]
+            for x in group[1:]
+        ]
+
+        primary[
+            "duplicate_count"
+        ] = max(
+            0,
+            len(group) - 1
+        )
+
+        results.append(
+            primary
+        )
+
+    return sorted(
+        results,
+        key=lambda x: x["score"],
+        reverse=True
+    )
 
 def github_repos():
 
@@ -708,11 +840,23 @@ def report(projects, repos, ideas, blueprint_path):
 
         # Only basename in report intended for GitHub.
         # Full local path remains in local SQLite database.
+        duplicate_count = p.get(
+            "duplicate_count",
+            0
+        )
+
+        duplicate_note = (
+            f" — {duplicate_count} related duplicate(s)"
+            if duplicate_count
+            else ""
+        )
+
         lines.append(
             f"- **{p['score']}/100** "
             f"{Path(p['path']).name} — "
             f"{','.join(p['types'])} — "
             f"{p['todos']} unfinished marker(s)"
+            f"{duplicate_note}"
         )
 
     lines.extend([

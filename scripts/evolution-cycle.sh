@@ -1,6 +1,7 @@
 #!/data/data/com.termux/files/usr/bin/bash
 set -Eeuo pipefail
 
+OWNER="${OWNER:-Ice1984m}"
 ROOT="$HOME/mikis13-evolution-engine"
 
 LOG="$ROOT/logs/cycle-$(date +%Y%m%d-%H%M%S).log"
@@ -58,11 +59,23 @@ if ! git diff --cached --quiet; then
 
   BRANCH="bot/evolution-$(date -u +%Y%m%d-%H%M%S)"
 
+  # Main eerst schoon synchroniseren voordat de bot-branch wordt gemaakt.
+  git reset
+
   git checkout main
 
-  git pull --rebase origin main || true
+  git pull --ff-only origin main
 
   git checkout -b "$BRANCH"
+
+  git add \
+    config \
+    engine \
+    scripts \
+    reports \
+    state
+
+  git reset state/evolution.db 2>/dev/null || true
 
   git commit \
     -m "Evolution cycle $(date -u +%Y-%m-%dT%H:%MZ)"
